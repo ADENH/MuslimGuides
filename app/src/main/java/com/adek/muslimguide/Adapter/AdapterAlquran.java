@@ -1,6 +1,7 @@
 package com.adek.muslimguide.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import com.adek.muslimguide.Pojo.Alquran.Surah;
 import com.adek.muslimguide.R;
+import com.adek.muslimguide.activity.Alquran.AyatAlquranActivity;
 
 import java.util.List;
 
@@ -54,6 +56,10 @@ public class AdapterAlquran extends RecyclerView.Adapter<AdapterAlquran.ViewHold
                 @Override
                 public void onClick(View view) {
                     int pos = getAdapterPosition();
+                    Intent act_ayat = new Intent(contextalquran, AyatAlquranActivity.class);
+                    act_ayat.putExtra("ayat",pos+1);
+                    act_ayat.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    contextalquran.startActivity(act_ayat);
                 }
             });
         }

@@ -11,14 +11,16 @@
             android:gravity="right"
             android:padding="10dp"
             android:id="@+id/tulisanalquran"
+            android:textColor="@color/hijaupekat"
             tools:text="بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ"
             tools:ignore="RtlHardcoded" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="10sp"
             android:padding="10dp"
             android:id="@+id/tulisanlatin"
+            android:textColor="@color/hijaupekat"
             tools:text="Bismillah"/>
        <View
         android:layout_width="match_parent"

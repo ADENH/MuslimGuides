@@ -1,5 +1,6 @@
 package com.adek.muslimguide.rest.alquran;
 
+import com.adek.muslimguide.Pojo.Alquran.ResultForSurah;
 import com.adek.muslimguide.Pojo.Alquran.Result;
 
 import retrofit2.Call;
@@ -16,7 +17,10 @@ public interface Service {
     Call<Result> getSurah ();
 
     @GET("surah/{surah}")
-    Call<Result> getAyah (@Path("surah")int noSurah);
+    Call<ResultForSurah> getAyah (@Path("surah")int noSurah);
+
+    @GET("surah/{surah}/en.asad")
+    Call<ResultForSurah> getEnTrans (@Path("surah")int noSurah);
 
 
 }
