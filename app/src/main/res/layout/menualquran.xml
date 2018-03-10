@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:orientation="vertical"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:id="@+id/latin_surah"
+            android:textColor="@color/hijaupekat"
+            tools:text="AL-Qur'an"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp"
+            android:id="@+id/arab_surah"
+            tools:text="AL-Qur'an"
+
+            android:textColor="@color/hijaupekat"
+            android:padding="10dp"
+            android:gravity="end" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/hijau"/>
+
+
+</LinearLayout>

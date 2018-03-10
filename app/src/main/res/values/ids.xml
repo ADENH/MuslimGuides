@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cardview" type="id" />
+    <item name="textjudul" type="id" />
+    <item name="gambar" type="id" />
+</resources>

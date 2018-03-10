@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="right"
+            android:padding="10dp"
+            android:id="@+id/tulisanalquran"
+            tools:text="بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:id="@+id/tulisanlatin"
+            tools:text="Bismillah"/>
+       <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/hijaupekat"/>
+
+</LinearLayout>
